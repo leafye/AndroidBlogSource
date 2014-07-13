@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FF00"
+        android:textSize="30sp"
+        android:text="Service应用详解" 
+        android:id="@+id/callBack_textview"
+        />
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/startservice_button"
+	    android:text="Start Service" 
+	    />
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/stopservice_button"
+	    android:text="Stop Service" 
+	    />
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:id="@+id/intentservice_execute_button"
+	    android:text="Use IntentService Execute" 
+	    />
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="3"
+	    android:id="@+id/start_main_execute"
+	    android:text="Start MainThread Execute" 
+	    />
+	</LinearLayout>
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/service_execute_button"
+	    android:text="Use Service execute" 
+	    />
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/messenger_boundservice_button"
+	    android:text="Use Messenger Bound Service" 
+	    />
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/messenger_unboundservice_button"
+	    android:text="Use Messenger UnBound Service" 
+	    />
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/boundservice_button"
+	    android:text="Extending Binder Bound Service" 
+	    />
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/unboundservice_button"
+	    android:text="Extending Binder UnBound Service" 
+	    />
+</LinearLayout>
