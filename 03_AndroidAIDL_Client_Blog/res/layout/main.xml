@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#00FF00"
+        android:text="AIDL详解" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bound_service_button"
+        android:text="Bound Service"
+         
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:id="@+id/getmethod_from_service_button"
+        android:text="Call the method from Service"
+         
+        />
+        <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/clear_text_textview"
+        android:text="Clear Text"
+         
+        />
+    </LinearLayout>
+        
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unbound_service_button"
+        android:text="UnBound Service"
+        />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FF0000"
+        android:id="@+id/showresult_textview"
+        />
+</LinearLayout>
