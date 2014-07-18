@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fendou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+	<permission android:name="com.fendou.order_broadcastreceiver_permission"/>
+	<uses-permission android:name="com.fendou.order_broadcastreceiver_permission"/>
+	<!-- 使用BroadcastReceiver Sticky权限 -->
+	<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+	<!-- 读取网络状态 权限-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activity.ReceiveActivity"/>
+        
+        <!-- 普通广播 -->
+        <!-- <receiver android:name=".broadcastreceiver.NormalBroadReceiver">
+            <intent-filter >
+                <action android:name="com.fendou.NORMAL_BROADCASTRECEIVER"/>
+            </intent-filter>
+        </receiver>  -->
+        
+        <!-- android:priority属性是为每个BroadcastReceiver设置优先级，值越大优先级越大 -->
+         <receiver android:name=".broadcastreceiver.OrderBroadCastReceiverFirst">
+            <intent-filter android:priority="500">
+                <action android:name="com.fendou.ORDER_NORMALBROADCASTRECEIVER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastreceiver.OrderBroadCastReceiverSecond">
+            <intent-filter android:priority="400">
+                <action android:name="com.fendou.ORDER_NORMALBROADCASTRECEIVER"/>
+            </intent-filter>
+        </receiver>
+         <receiver android:name=".broadcastreceiver.OrderBroadCastReceiverThird">
+            <intent-filter android:priority="300">
+                <action android:name="com.fendou.ORDER_NORMALBROADCASTRECEIVER"/>
+            </intent-filter>
+        </receiver> 
+        
+         <!-- 接收系统发送过来的广播 -->
+         <receiver android:name=".broadcastreceiver.NetworkConnectBroadCastReceiver">
+            <intent-filter >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastreceiver.AirPlaneModeChangeBroadCastReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
