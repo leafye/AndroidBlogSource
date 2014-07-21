@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_id"
+        android:layout_alignParentLeft="true" 
+        android:text="app ID"
+        android:layout_centerVertical="true"
+        />
+     <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:layout_toRightOf="@id/app_id"
+        android:layout_marginLeft="10dp"
+        android:text="image"
+        android:layout_centerVertical="true"
+        />
+     <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@id/image"
+         android:layout_marginLeft="50dp"
+         >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="image Name" 
+             android:id="@+id/image_name"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:text="add date" 
+             android:id="@+id/add_date"
+             />
+     </LinearLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">05_AndroidContentProvider_Access_Blog</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">添加</string>
+    
+    
+    <string name="operation">%s操作</string>
+
+</resources>

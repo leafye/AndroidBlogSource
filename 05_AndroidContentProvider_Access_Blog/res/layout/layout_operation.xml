@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+    	   android:layout_height="wrap_content"
+    	   android:text="姓名："
+            />
+        <EditText
+           android:layout_width="match_parent"
+    	   android:layout_height="wrap_content"
+    	   android:layout_marginLeft="5dp"
+    	   android:layout_marginRight="10dp"
+    	   android:hint="Enter Name" 
+    	   android:id="@+id/name"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+    	   android:layout_height="wrap_content"
+    	   android:text="Email："
+            />
+        <EditText
+           android:layout_width="match_parent"
+    	   android:layout_height="wrap_content"
+    	   android:layout_marginLeft="5dp"
+    	   android:layout_marginRight="10dp"
+    	   android:hint="Enter Email" 
+    	   android:id="@+id/email"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView 
+           android:layout_width="wrap_content"
+    	   android:layout_height="wrap_content"
+    	   android:text="身高："
+            />
+        <EditText
+           android:layout_width="match_parent"
+    	   android:layout_height="wrap_content"
+    	   android:layout_marginLeft="5dp"
+    	   android:layout_marginRight="10dp"
+    	   android:hint="Enter Height" 
+    	   android:id="@+id/height"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+
