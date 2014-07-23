@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<EditText
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:id="@+id/content_edittext"
+	    android:hint="please enter something" 
+	    />
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/read_button"
+	    android:text="Read Internal File"
+	    android:layout_below="@id/content_edittext"
+	    android:layout_marginTop="5dp"
+	    android:onClick="readInternalFile"
+	    />
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/save_button"
+	    android:text="Save To Internal File"
+	    android:layout_below="@id/read_button"
+	    android:layout_marginTop="5dp"
+	    android:onClick="saveInternalFile"
+	    />
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:textColor="#FF0000"
+	    android:layout_below="@id/save_button"
+	    android:id="@+id/content_textview"
+	    />
+</RelativeLayout>

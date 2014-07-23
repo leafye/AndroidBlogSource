@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:layout_marginLeft="15dp"
+	    android:text="UserName:" 
+	    android:id="@+id/username_textview"
+	    />
+	<EditText
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="please enter name"
+	    android:id="@+id/username_edittext"
+	    android:layout_alignBaseline="@id/username_textview"
+	    android:layout_toRightOf="@id/username_textview" 
+	    android:layout_marginRight="20dp"
+	    />
+	
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:layout_alignLeft="@id/username_textview"
+	    android:layout_below="@id/username_textview"
+	    android:text="PassWord:" 
+	    android:id="@+id/password_textview"
+	    />
+	<EditText
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="please enter password"
+	    android:id="@+id/password_edittext"
+	    android:layout_alignBaseline="@id/password_textview"
+	    android:layout_toRightOf="@id/password_textview" 
+	    android:layout_marginRight="20dp"
+	    />
+	<Button 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="20dp"
+	    android:layout_below="@id/password_textview"
+	    android:text="Cancel Button"
+	    android:onClick="cancelButton"
+	    android:id="@+id/cancel_button"
+	    />
+	<Button 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/password_textview"
+	    android:layout_toLeftOf="@id/cancel_button"
+	    android:layout_alignBaseline="@id/cancel_button"
+	    android:text="Save Button"
+	    android:onClick="saveButton"
+	    android:id="@+id/save_button"
+	    />
+</RelativeLayout>

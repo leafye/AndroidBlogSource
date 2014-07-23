@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="External Public"
+	    android:onClick="getThePicturesPublicDirectory"
+	    android:id="@+id/external_public_button" 
+	    />
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="External Private"
+	    android:onClick="getThePictureDirectory"
+	    android:id="@+id/external_public_button" 
+	    />
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="External Private Cache"
+	    android:onClick="getThePictureCacheDirectory"
+	    android:id="@+id/external_public_button" 
+	    />
+	
+</LinearLayout>
