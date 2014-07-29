@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.andriodleaf.json.activity.MainActivity" >
+
+    <item
+        android:id="@+id/json_person"
+        android:orderInCategory="100"
+        android:title="@string/json_person"
+        app:showAsAction="never"/>
+     <item
+        android:id="@+id/json_list_person"
+        android:orderInCategory="100"
+        android:title="@string/json_list_person"
+        app:showAsAction="never"/>
+      <item
+        android:id="@+id/json_string"
+        android:orderInCategory="100"
+        android:title="@string/json_strings"
+        app:showAsAction="never"/>
+      <item
+        android:id="@+id/json_listmap_person"
+        android:orderInCategory="100"
+        android:title="@string/json_listmap_person"
+        app:showAsAction="never"/>
+</menu>

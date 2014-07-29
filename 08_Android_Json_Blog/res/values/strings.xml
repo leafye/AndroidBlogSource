@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">08_Android_Json_Blog</string>
+    <string name="hello_world">Json数据解析</string>
+    
+    <string name="json_person">JsonToPerson</string>
+    <string name="json_strings">JsonToStrings</string>
+    <string name="json_list_person">JsonToListPerson</string>
+    <string name="json_listmap_person">JsonToListMapPerson</string>
+
+</resources>
