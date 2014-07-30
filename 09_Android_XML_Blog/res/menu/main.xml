@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.andriodleaf.json.activity.MainActivity" >
+
+    <item
+        android:id="@+id/sax"
+        android:orderInCategory="100"
+        android:title="SAX 解析"
+        app:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/dom"
+        android:orderInCategory="100"
+        android:title="Dom 解析"
+        app:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/pull"
+        android:orderInCategory="100"
+        android:title="Pull 解析"
+        app:showAsAction="never"/>
+
+</menu>
