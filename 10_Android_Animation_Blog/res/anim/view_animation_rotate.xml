@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+  * android:fromDegrees="-20":动画开始执行时的控件起始状态的角度;
+  * android:toDegrees="720":动画结束执行时的控件结束状态的角度；
+  * android:pivotX="50%":旋转动画的中心点的X轴方向的横坐标，Value加%时，意思是相对于控件的原始位置往右方向的50%控件宽度的位置为横坐标，
+  * 						若Value为负值(例如-50%)，则表示往左方向；当Value为数值时，则代表相对于屏幕的(px)像素值；
+  * android:pivotY="0%":旋转动画的中心店的Y轴方向的纵坐标，原理同上；
+  * android:startOffset="1000":动画执行前的延迟时间；
+  * android:fillAfter="true":当Value为true,表示动画执行结束后停留在结束后的状态；
+  * android:duration="2500":设置每一次动画持续的时间值,单位为毫秒(ms)；
+  * android:repeatCount="5":设置动画重复的次数；
+  * android:repeatMode="reverse":设置动画重复的模式：
+  *  	reverse为0.0 -> 1.0 -> 0.0,动画反复执行；
+  *  	restart为0.0 -> 1.0, 0.0 -> 1.0,动画每次都重新开始执行
+ -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+   android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+   android:fromDegrees="-20"
+   android:toDegrees="720"
+   android:pivotX="50%"
+   android:pivotY="0%"
+   android:startOffset="1000"
+   android:fillAfter="true"
+   android:duration="2500"
+   android:repeatCount="4"
+   android:repeatMode="reverse"
+   />

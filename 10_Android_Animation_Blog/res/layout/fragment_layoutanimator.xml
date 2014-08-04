@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_animation_background"
+    android:orientation="vertical"
+     >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+		<Button 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="Add Button"
+	        android:id="@+id/layout_animator_addbutton"
+	        />
+	    <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="Reset Button"
+	        android:id="@+id/layout_animator_resetbutton" 
+	        />
+	</LinearLayout>
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="5"
+        android:animateLayoutChanges="true" 
+        android:id="@+id/layout_animator_gridview"
+        />
+   </ScrollView>
+    
+</LinearLayout>
+

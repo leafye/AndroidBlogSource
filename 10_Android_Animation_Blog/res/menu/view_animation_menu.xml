@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:enabled="true"
+        android:title="Alpha"
+        android:showAsAction="always|withText"
+        android:id="@+id/view_animation_alpha"
+        />
+    <item 
+        android:enabled="true"
+        android:title="Scale"
+        android:showAsAction="always|withText"
+        android:id="@+id/view_animation_scale"
+        />
+    <item 
+        android:enabled="true"
+        android:title="Translate"
+        android:showAsAction="always|withText"
+        android:id="@+id/view_animation_translate"
+        />
+    <item 
+        android:enabled="true"
+        android:title="Rotate"
+        android:showAsAction="always|withText"
+        android:id="@+id/view_animation_rotate"
+        />
+    
+    <item 
+        android:enabled="true"
+        android:title="Set"
+        android:showAsAction="always|withText"
+        android:id="@+id/view_animation_set"
+        />
+</menu>

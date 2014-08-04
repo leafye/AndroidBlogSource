@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidleaf.animation.activity.MainActivity" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Property Animation"
+        android:id="@+id/property_animation" 
+        android:onClick="propertyAnimation"
+        />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Animation"
+        android:id="@+id/view_animation" 
+        android:onClick="viewAnimation"
+        />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawable Animation"
+        android:id="@+id/drawable_animation" 
+        android:onClick="drawableAnimation"
+        />
+</LinearLayout>
+

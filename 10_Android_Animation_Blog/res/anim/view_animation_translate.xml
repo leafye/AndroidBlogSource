@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+   * android:interpolator:修饰动画效果，定义动画的变化率，可以使存在的动画效果accelerated(加速)，
+	           decelerated(减速),repeated(重复),bounced(弹跳)等。
+   * android:fromXDelta="0%"动画开始执行时X轴方向控件的起始位置，当value加%时(例如80%),意思是相对于控件的原始位置往右的80%控件宽度的位置
+   * 					又例如value为-20%时，意思是相对于控件的原始位置往左的20%控件宽度的位置。当Value不加%时(例如80)，表示相对于
+   * 					控件的原始位置往右80个像素(px)的位置,又如当Value为-20时，即往左20个像素。
+   * android:toXDelta="100%"动画结束执行时X轴方向控件的结束位置，Value可以加%，也可以不加%，原理同上
+   * android:fromYDelta="0%"动画开始执行时Y轴方向控件的起始位置，Value可以加%，也可以不加%，原理同上
+   * android:toYDelta="100%"动画结束执行时Y轴方向控件的结束位置，Value可以加%，也可以不加%，原理同上
+   * android:duration="2500"设置每一次动画持续的时间值
+   * android:repeatMode="reverse"设置动画重复的模式，reverse为0% -> 100% -> 0%,动画反复执行；
+   * 	restart为0% -> 100%, 0% -> 100%,动画每次都重新开始执行
+   * android:repeatCount="1"设置动画重复的次数
+   * android:startOffset="1000":动画执行前的延迟时间	
+   * android:fillEnabled="false"当设置为true时，fillAfter和fillBefroe将会都为true，此时会忽略fillBefore和fillAfter两种属性
+   * android:fillAfter="true":当Value为true,表示动画执行结束后停留在结束后的状态
+   * android:fillBefore="false":当Value为false:表示动画执行结束后回到动画开始时的状态
+ -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/bounce_interpolator"
+    android:fromXDelta="0%"
+    android:toXDelta="100%"
+    android:fromYDelta="0%"
+    android:toYDelta="100%"
+    android:duration="2500"
+    android:repeatMode="reverse"
+    android:repeatCount="1"
+    android:startOffset="1000"
+    android:fillEnabled="false"
+  	android:fillAfter="true"
+  	android:fillBefore="true"
+   />

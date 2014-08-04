@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="view_animation_background">#c7edcc</color>
+    <color name="propertyanimator_background">#6495ED</color>
+</resources>

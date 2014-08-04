@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+  * android:interpolator:修饰动画效果，定义动画的变化率，可以使存在的动画效果accelerated(加速)，
+  *           decelerated(减速),repeated(重复),bounced(弹跳)等。
+  * android:fromAlpha="0.0":设置动画开始时控件的透明度，0.0为透明，控件不显示，1.0为不透明，控件全部显示
+  * android:toAlpha="1.0":设置动画结束时的控件的透明度
+  * android:duration="2500":设置每一次动画持续的时间值
+  * android:repeatCount="5":设置动画重复的次数
+  * android:repeatMode="reverse":设置动画重复的模式，reverse为0.0 -> 1.0 -> 0.0,动画反复执行；
+  * restart为0.0 -> 1.0, 0.0 -> 1.0,动画每次都重新开始执行	
+ -->
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:fromAlpha="0.0" 
+    android:toAlpha="1.0"
+    android:duration="2500"
+    android:repeatCount="5"
+    android:repeatMode="reverse"
+   />

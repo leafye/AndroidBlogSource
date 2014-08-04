@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_animation_background"
+     >
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/valueanimator_linear_first"
+         android:orientation="horizontal"
+         >
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Margin Animator"
+             android:id="@+id/margin_valueanimator_button" 
+             />
+          <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Scale Animator"
+             android:id="@+id/scale_valueanimator_button" 
+             />
+     </LinearLayout>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/valueanimator_linear_first"
+         android:id="@+id/valueanimator_linear_second"
+         android:orientation="horizontal"
+         >
+          <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Rotate Animator"
+             android:id="@+id/rotate_valueanimator_button" 
+             />
+          <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Show ListView"
+             android:id="@+id/valueanimator_showlistview" 
+             />
+     </LinearLayout>
+     
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueanimator_linear_second"
+        android:scaleType="centerCrop"
+        android:src="@drawable/property_animation_image" 
+        android:id="@+id/value_animator_imageview_test"
+        />
+     <ListView 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="0"
+         android:background="#EECBAD"
+         android:id="@+id/valueanimator_listview"
+         />
+</RelativeLayout>
+

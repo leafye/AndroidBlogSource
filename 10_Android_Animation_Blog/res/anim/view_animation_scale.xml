@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+   * android:fromXScale="0.0":设置动画开始时X轴方向的缩放起始值。0.0为X轴方向的控件缩成一点，1.0为X轴方向的控件不缩放
+   * android:toXScale="1.0":设置动画结束时X轴方向的缩放结束值。
+   * android:fromYScale="0.5":设置动画开始时Y轴方向的缩放起始值。0.0为Y轴方向的控件缩成一点，1.0为Y轴方向的控件不缩放
+   * android:toYScale="1.0":设置动画结束时Y轴方向的缩放结束值
+   * android:pivotX="100%":动画相对于物件的X坐标的开始位置,当value加了百分号%时(例如80%),则实现相对于控件本身
+   *			        的位置而定的,当value是数值时(不加%号)，则是指相对于父控件的位置而定的，单位是px。
+   * android:pivotY="80%":动画相对于物件的Y坐标的开始位置,当value加了百分号%时(例如80%),则实现相对于控件本身
+   *			        的位置而定的，当value是数值时(不加%号)，则是指相对于父控件的位置而定的,单位是px。
+   * android:duration="2500":设置每一次动画持续的时间值,单位为毫秒(ms)
+   * android:repeatCount="5":设置动画重复的次数
+   * android:repeatMode="reverse":设置动画重复的模式：
+   *	reverse为0.0 -> 1.0 -> 0.0,动画反复执行；
+   *	restart为0.0 -> 1.0, 0.0 -> 1.0,动画每次都重新开始执行
+ -->
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="0.0"
+    android:toXScale="1.0"
+    android:fromYScale="0.5"
+    android:toYScale="1.0"
+    android:pivotX="100%"
+    android:pivotY="80%"
+    android:duration="2500"
+    android:repeatCount="5"
+    android:repeatMode="reverse"
+   />
