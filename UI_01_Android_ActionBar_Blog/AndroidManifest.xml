@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidleaf.actionbar.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--  
+        	android:logo设置ActionBar图标
+        	android:label设置ActionBar图标名称
+        	android:theme="@android:style/Theme.Holo.Light" ActionBar浅色背景 ,Android3.0版本以下使用
+        	@style/Theme.AppCompat.Light
+        -->
+        <activity
+            android:name="com.androidleaf.actionbar.activity.MainActivity"
+            android:logo="@drawable/sys_icon"
+            android:label="@string/main_title"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.androidleaf.actionbar.activity.ScreenFirstActivity"
+            android:label="@string/main_title"
+            >
+        </activity>
+        
+        <!-- android:parentActivityName设置点击ActionBar图标时跳转的父类Activity界面名称  -->
+        <activity 
+            android:name="com.androidleaf.actionbar.activity.ScreenSecondActivity"
+            android:logo="@drawable/sys_icon"
+            android:label="@string/main_title"
+            android:theme="@style/MyActionBarTheme"
+            >
+              <!-- 设置点击ActionBar图标时跳转的父类Activity界面名称,Android4.1之前使用这个设置，
+                   Android4.1之后可以 直接使用android:parentActivityName属性设置
+             -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidleaf.actionbar.activity.MainActivity" 
+                /> 
+                
+        </activity>
+        
+        <!--     android:uiOptions="splitActionBarWhenNarrow"
+             <meta-data 
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow"
+                />     -->
+    </application>
+
+</manifest>

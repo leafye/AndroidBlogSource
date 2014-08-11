@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UI_01_Android_ActionBar_Blog</string>
+    <string name="hello_world">这是MainActivity</string>
+    <string name="second_string">这是ScreenSecondActivity</string>
+    
+    <string name="action_search">搜索</string>
+    <string name="action_share">分享</string>
+    <string name="action_write">写心情</string>
+    <string name="action_delete">删除</string>
+    <string name="action_tip">评论</string>
+    <string name="action_setting">设置</string>
+    <string name="action_send">私信</string>
+    
+    <string name="fragment_str_app">应用界面</string>
+    <string name="fragment_str_game">游戏界面</string>
+    
+    <string name="user_like">写赞的评论</string>
+    <string name="user_fuck">fuck评论</string>
+    
+    
+    <!-- ActionBar图标名称 -->
+    <string name="main_title">图标名</string>
+    
+    <string-array name="navigation_list_array">
+        <item>全部</item>
+        <item>热门信息</item>
+        <item>朋友</item>
+        <item>家人</item>
+        <item>认识的人</item>
+        <item>关注的对象</item>
+        <item>附近的信息</item>
+    </string-array>
+
+</resources>
