@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <color name="actionbar_background">#6495ED</color>
-    <color name="action_item_background">#87CEFA</color>
-    <color name="actionbar_tab_textcolor">#000000</color>
-    <color name="actionbar_text">#000000</color>
-</resources>
