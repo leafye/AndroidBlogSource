@@ -1,0 +1,74 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- Android3.0及以上ActionBar自定义的样式主题 -->
+    <style name="MyActionBarTheme" parent="@android:style/Theme.Holo">
+        <!-- 设置ActionBar Style -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!--设置ActionBar中ActionItems的背景和点击选中时的style -->
+        <item name="android:selectableItemBackground">@drawable/choose_action_items_background</item>
+	    <!-- 设置overflow按钮的图片资源 -->
+	    <item name="android:actionOverflowButtonStyle">@style/MyOverFlowButton</item>
+	    <!-- 设置overflow中items的背景和点击选中时的style -->
+	    <item name="android:dropDownListViewStyle">@style/MyDropDownListView</item>
+	  	<!-- 设置ActionBar Tab的字体颜色-->
+	  	<item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+	  	<!-- 设置单个ActionBar Tab的样式背景 -->
+	  	<item name="android:actionBarTabStyle">@style/MyActionBarTab</item>
+    </style>
+
+    <!--Android3.0及以上ActionBar样式-->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        
+        <!--设置ActionBar的背景-->
+        <item name="android:background">@color/actionbar_background</item>
+        <!--设置这个Tabs的背景-->
+       <!--  <item name="android:backgroundStacked">@drawable/tab_select_background</item> -->
+        <!--设置ActionBar的标题的样式-->
+        <item name="android:titleTextStyle">@style/ActionBarTextStyle</item>
+    </style>
+    
+    <!--设置overflow按钮的图片资源 -->
+    <style name="MyOverFlowButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/actionbar_more_icon</item>
+    </style>
+    
+    <!--ActionBar字体样式 -->
+    <style name="ActionBarTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_tab_textcolor</item>
+    </style>
+    
+    <!--设置overflow中items的背景和点击选中时的style-->
+    <style name="MyDropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+    	<item name="android:listSelector">@drawable/choose_action_items_background</item>
+    	<item name="android:background">@color/actionbar_background</item>
+	</style>
+	
+	<!--设置ActionBar Tab的字体颜色-->
+    <style name="MyActionBarTabText" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_tab_textcolor</item>
+    </style>
+    
+    <!-- 设置单个ActionBar Tab的样式背景 -->
+     <style name="MyActionBarTab" parent="@android:style/Widget.Holo.ActionBar.TabView">
+       <item name="android:background">@drawable/tab_select_background</item>
+    </style> 
+    
+    
+</resources>

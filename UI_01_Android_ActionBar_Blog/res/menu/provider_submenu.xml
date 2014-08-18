@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+     
+     <item
+        android:id="@+id/user_like"
+        android:orderInCategory="40"
+        android:title="@string/user_like"
+        android:icon="@drawable/user_icon_like"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/user_fuck"
+        android:orderInCategory="50"
+        android:title="@string/user_fuck"
+        android:icon="@drawable/user_icon_fuck"
+        android:showAsAction="ifRoom"/>
+     
+</menu>

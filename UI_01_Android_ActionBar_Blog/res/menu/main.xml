@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.androidleaf.actionbar.activity.MainActivity" >
+
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="20"
+        android:title="@string/action_delete"
+        android:icon="@drawable/msg_icon_clear_all"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_tip"
+        android:orderInCategory="30"
+        android:title="@string/action_tip"
+        android:icon="@drawable/poi_icon_action_tip"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="40"
+        android:title="@string/action_setting"
+        android:icon="@drawable/user_icon_setting"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_send"
+        android:orderInCategory="50"
+        android:title="@string/action_send"
+        android:icon="@drawable/title_icon_send"
+        android:showAsAction="ifRoom"/>
+</menu>
