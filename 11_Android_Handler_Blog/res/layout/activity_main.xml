@@ -1,0 +1,54 @@
+<?xml version= "1.0" encoding ="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width= "fill_parent"
+    android:layout_height= "fill_parent"
+    android:orientation= "vertical" >
+
+    <ScrollView 
+        android:layout_width= "fill_parent"
+	    android:layout_height= "fill_parent"
+        >
+	    <LinearLayout 
+	    android:layout_width= "fill_parent"
+	    android:layout_height= "fill_parent"
+	    android:orientation= "vertical" >
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:textColor="#FF0000"
+		        android:text="Handler应用详解" />
+		    <Button
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="主线程Handler主线程Looper"
+		        android:onClick="mainHanlderMainLooper"
+		      />
+		  	<ImageView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:id="@+id/dialog_imageview"
+		        />
+		  	<Button
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="子线程Handler主线程Looper"
+		        android:onClick="subHanlderMainLooper"
+		      />
+		 
+		  	<Button
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="子线程Handler子线程Looper"
+		        android:onClick="subHanlderSubLooper"
+		      />
+			<Button
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="开启欢迎界面"
+		        android:onClick="welcome"
+		      />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
