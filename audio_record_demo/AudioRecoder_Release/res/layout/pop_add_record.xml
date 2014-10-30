@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/add_pop_bg_color"
+    >
+    <RelativeLayout
+        android:id="@+id/layout_record_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="100sp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_listen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/tv_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/tv_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekbar_play"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:padding="0dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@drawable/seekbar_thumb"
+                android:thumbOffset="0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="215dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+       <RelativeLayout 
+           android:layout_width="110dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:id="@+id/btn_record_reset"
+           android:visibility="invisible"
+           >
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="55dp"
+               android:src="@drawable/btn_record_icon_reset"
+               android:id="@+id/recrod_reset_img"
+               />
+           <TextView
+	           android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white" 
+               android:textSize="@dimen/audio_record_textsize"
+               android:text="@string/record_reset"
+               android:layout_below="@id/recrod_reset_img"
+               android:layout_marginTop="16dp"
+	           android:layout_centerHorizontal="true"
+	          />
+       </RelativeLayout>
+       
+        <RelativeLayout
+	        android:layout_width="110dp"
+	        android:layout_height="110dp"
+	        android:layout_gravity="center_horizontal"
+	        >
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_gray_bg"
+            android:contentDescription="" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_btn_record"
+            android:background="@drawable/record_round_blue_bg"
+            android:contentDescription="" />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/audio_record_textsize"
+            android:textColor="@color/white"
+            android:text="@string/record_continue" 
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/record_continue_txt"
+            />
+        </RelativeLayout>
+        
+         <RelativeLayout 
+           android:layout_width="110dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:id="@+id/btn_record_complete"
+           android:visibility="invisible"
+           >
+           <ImageView
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginTop="55dp"
+               android:src="@drawable/btn_record_icon_complete"
+	           android:layout_centerHorizontal="true"
+	           android:id="@+id/recrod_complete_img"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white" 
+               android:textSize="@dimen/audio_record_textsize"
+               android:text="@string/record_over"
+               android:layout_below="@id/recrod_complete_img"
+               android:layout_marginTop="16dp"
+	           android:layout_centerHorizontal="true"
+	           android:id="@+id/record_complete_txt"
+               />
+       </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

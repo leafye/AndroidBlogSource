@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AudioRecoderDemo</string>
+    <string name="hello_world">AudioRecoder</string>
+    <string name="action_settings">Settings</string>
+    <string name="record_continue">继续</string>
+    <string name="record_reset">重录</string>
+    <string name="record_over">完成</string>
+</resources>
