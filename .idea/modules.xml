@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidBlogSource.iml" filepath="$PROJECT_DIR$/AndroidBlogSource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PluginDemo/PluginDemo.iml" filepath="$PROJECT_DIR$/PluginDemo/PluginDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerViewDemo/RecyclerViewDemo.iml" filepath="$PROJECT_DIR$/RecyclerViewDemo/RecyclerViewDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RxjavaDemo/RxjavaDemo.iml" filepath="$PROJECT_DIR$/RxjavaDemo/RxjavaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebviewDemo/WebviewDemo.iml" filepath="$PROJECT_DIR$/WebviewDemo/WebviewDemo.iml" />
+    </modules>
+  </component>
+</project>
