@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/01ActivityDemo/01ActivityDemo.iml" filepath="$PROJECT_DIR$/01ActivityDemo/01ActivityDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidBlogSource.iml" filepath="$PROJECT_DIR$/AndroidBlogSource.iml" />
       <module fileurl="file://$PROJECT_DIR$/PluginDemo/PluginDemo.iml" filepath="$PROJECT_DIR$/PluginDemo/PluginDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerViewDemo/RecyclerViewDemo.iml" filepath="$PROJECT_DIR$/RecyclerViewDemo/RecyclerViewDemo.iml" />
