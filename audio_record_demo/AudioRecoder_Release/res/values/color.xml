@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FFD13415</color>
+    <color name="gray">#FF888888</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF5A98AB</color>
+    <color name="white">#FFfdfdfd</color>
+    <color name="white_p50">#3FFFFFFF</color>
+    <color name="white_p90">#5FFFFFFF</color>
+    <color name="green">#FF6ACC13</color>
+	<color name="add_pop_bg_color">#696969</color>
+	<color name="blue_s">#104E8B</color>
+   <color name="blue_n">#436EEE</color>
+    
+    <color name="gray_sixsix">#666666</color>
+	<color name="gray_sixthree">#333333</color>
+     <color name="gray_light">#cccccc</color>
+    <color name="gray_darker">#aaaaaa</color>
+     <color name="gray_add">#313c4c</color>
+    <color name="red_add">#fa6b5b</color>
+     <color name="blue_add">#436EEE</color>
+     <color name="seekbar_secondaryprogress_color">#3F4DB5A4</color>
+     <color name="item_common_select">#e8e8e5</color>
+     <color name="red_n">#ff7676</color>
+</resources>
