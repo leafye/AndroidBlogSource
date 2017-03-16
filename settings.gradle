@@ -1,1 +1,1 @@
-include ':RecyclerViewDemo', ':PluginDemo', ':WebviewDemo', ':RxjavaDemo', ':01ActivityDemo'
+include ':RecyclerViewDemo', ':PluginDemo', ':WebviewDemo', ':RxjavaDemo', ':01ActivityDemo', ':01FragmentDemo'

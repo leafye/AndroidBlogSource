@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidleaf.fragmentdemo.activity.MainActivity"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="The Life Cycle"
+	        android:onClick="lifeCycle"
+        />
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Example First Fragment"
+	        android:onClick="exampleFirst"
+	        />
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Add Fragment By Static"
+	        android:onClick="addFragmentByStatic"
+	        />
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Add Fragment By Dynamic"
+	        android:onClick="addFragmentByDynamic"
+	        />
+	     <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="CreateEventCallBackToActivity"
+	        android:onClick="createEventCallBackToActivity"
+	        />
+	      <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="AddActionBarToFragment"
+	        android:onClick="addActionBarToFragment"
+	        />
+	       <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="AdapterMobileAndPad"
+	        android:onClick="adaptvieBetweenMobileAndPad"
+	        />
+    </LinearLayout>
+    
+</ScrollView>
+

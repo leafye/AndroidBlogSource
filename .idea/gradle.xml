@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/01ActivityDemo" />
+            <option value="$PROJECT_DIR$/01FragmentDemo" />
             <option value="$PROJECT_DIR$/PluginDemo" />
             <option value="$PROJECT_DIR$/RecyclerViewDemo" />
             <option value="$PROJECT_DIR$/RxjavaDemo" />
