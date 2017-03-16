@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">02ServiceDemo</string>
+    <string name="remote_service_started">The service has started</string>
+    <string name="remote_service_stopped">The service has stoped</string>
+    <string name="remote_service_label">The Service label</string>
+</resources>
